@@ -1,0 +1,109 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header Styles */
+
+header {
+    padding: 0 20rem;
+}
+
+/* Logo Styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .25rem;
+    padding: 1rem 0;
+    color: rgb(67, 67, 151);
+}
+.logo-container-text-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.75rem;
+    font-weight: bold;
+    width: 10rem;
+}
+.bottom-text {
+    align-self:flex-end;
+}
+
+.logo-img {
+    width: 80px;
+}
+
+/* Navbar Styles */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.links-group a {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: rgb(67, 67, 151);
+    text-decoration: none;
+    /* border: 1px solid black; */
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.2s linear;
+}
+.links-group .primary-btn {
+    background-color: rgb(67, 67, 151);
+    color: white;
+}
+
+.links-group a:hover {
+    color: rgb(121, 121, 224);
+}
+.links-group .primary-btn:hover {
+    color: white;
+    background-color: rgb(121, 121, 224);
+}
+
+/* Home Section Styles */
+
+.home-section {
+    padding: 5rem 20rem 2rem;
+}
+
+.landing-grid-left {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.landing-grid-left h1 {
+    font-size: 3rem;
+}
+.landing-grid-left h1 span {
+    color: rgb(67, 67, 151);
+}
+
+.landing-grid h2 {
+    font-size: 2rem;
+}
+
+.landing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50vh;
+}
+
+.landing-grid-right img {
+    width: 100%;
+}
