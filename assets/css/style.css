@@ -119,7 +119,7 @@ footer .copyright {
 
 /* Home Section Styles */
 
-.home-section {
+section {
   padding: 5rem 20rem 2rem;
 }
 
@@ -149,7 +149,7 @@ footer .copyright {
 .grid-left h2 {
   font-size: 2rem;
 }
-.landing-grid-left p {
+.grid-left p {
   font-size: 1.25rem;
 }
 
@@ -168,7 +168,6 @@ footer .copyright {
   border: 1px solid rgb(0, 91, 221);
   border-radius: 12px;
   width: 50%;
-  height: 60px;
   padding: 1.25rem;
   display: flex;
   justify-content: center;
@@ -193,3 +192,18 @@ footer .copyright {
   width: 100%;
 }
 
+/* courses.html styles */
+
+#courses-section .grid-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#courses-grid-left .grid-left-header h1 {
+  font-size: 2rem;
+}
+#courses-grid-left .grid-left-header h2 {
+  font-size: 1.5rem;
+}
