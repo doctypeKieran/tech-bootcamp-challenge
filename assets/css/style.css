@@ -22,8 +22,6 @@ header {
   justify-content: center;
   gap: 0.25rem;
   padding: 1rem 0;
-  /* color: rgb(67, 67, 151); */
-  /* color: rgb(0, 91, 221); */
 }
 .logo-container-text-box {
   display: flex;
@@ -74,6 +72,8 @@ header {
   color: white;
   background-color: rgb(254, 85, 101);
 }
+
+/* Footer Styles */
 
 /* Home Section Styles */
 
