@@ -58,13 +58,11 @@ header {
   font-weight: bold;
   color: rgb(0, 91, 221);
   text-decoration: none;
-  /* border: 1px solid black; */
   border-radius: 12px;
   padding: 1.5rem;
   transition: all 0.3s linear;
 }
 .links-group .primary-btn {
-  /* background-color: rgb(67, 67, 151); */
   background-color: rgb(0, 91, 221);
   color: white;
 }
@@ -83,50 +81,72 @@ header {
   padding: 5rem 20rem 2rem;
 }
 
+/* Grid display for home content */
 .landing-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 50vh;
+  gap: 2rem;
 }
 
+/* Flexbox applied for column layout on left grid */
 .landing-grid-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
-  }
-  
-  .landing-grid-left h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-  }
-  .landing-grid-left h1 span {
-    color: rgb(0, 91, 221);
-  }
-  .landing-grid-left h2 {
-    font-size: 2rem;
-  }
-  .landing-grid-left p {
-    font-size: 1.25rem;
-  }
-  
-  .landing-grid-left .primary-btn {
-    background-color: rgb(0, 91, 221);
-    color: white;
-    font-size: 1.25rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 12px;
-    width: 300px;
-    padding: 1.25rem;
-    display: flex;
-    justify-content: center;
-    transition: all 0.3s linear;
-  }
-  .landing-grid-left .primary-btn:hover {
-    background-color: rgb(254, 85, 101);
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
 
+.landing-grid-left h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.landing-grid-left h1 span {
+  color: rgb(0, 91, 221);
+}
+.landing-grid-left h2 {
+  font-size: 2rem;
+}
+.landing-grid-left p {
+  font-size: 1.25rem;
+}
+
+.landing-grid-left .primary-btn:hover,
+#get-in-touch-btn:hover {
+  background-color: rgb(254, 85, 101);
+  color: white;
+  border: 1px solid rgb(254, 85, 101);
+}
+
+/* Image takes up 100% of right-hand grid */
 .landing-grid-right img {
   width: 100%;
+}
+
+.home-buttons-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.landing-grid-left .primary-btn {
+  background-color: rgb(0, 91, 221);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid rgb(0, 91, 221);
+  border-radius: 12px;
+  width: 50%;
+  height: 60px;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+
+#get-in-touch-btn {
+  background-color: white;
+  color: rgb(0, 91, 221);
+  border: 1px solid rgb(0, 91, 221);
 }
